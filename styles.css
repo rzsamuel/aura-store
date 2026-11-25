@@ -1,0 +1,59 @@
+/* Estilos generales y paleta personalizada */
+:root {
+    --pastel-blue: #E0F2FE;
+    --deep-blue: #0369A1;
+    --pastel-purple: #F3E8FF;
+    --deep-purple: #6B21A8;
+    --bg-main: #F8FAFC;
+    --text-main: #0F172A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+.surface-header {
+    background-color: #FFFFFF;
+}
+
+/* Botones de filtro por categoría */
+.filter-btn {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.filter-btn-active {
+    background-color: #581C87;
+    color: #FFFFFF;
+    border: 1px solid #581C87;
+}
+
+.filter-btn-inactive {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #D8B4FE;
+}
+
+.filter-btn-inactive:hover {
+    background-color: #F3E8FF;
+}
+
+/* Tarjetas de producto */
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(88, 28, 135, 0.12);
+}
